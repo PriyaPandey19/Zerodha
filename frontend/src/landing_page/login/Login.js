@@ -32,7 +32,7 @@ function Login() {
 
         // ✅ redirect to DASHBOARD app
         setTimeout(() => {
-          window.location.href = "https://zerodha-7jne.onrender.com";
+          window.location.href = "https://zerodha-2-i6kd.onrender.com";
         }, 1000);
 
         // clear form
