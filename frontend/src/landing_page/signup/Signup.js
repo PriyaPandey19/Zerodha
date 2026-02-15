@@ -33,7 +33,7 @@ function Signup() {
 
       // ✅ redirect to dashboard app
       setTimeout(() => {
-        window.location.href = "http://localhost:3001";  //dashboard url
+        window.location.href = "https://zerodha-2-i6kd.onrender.com";  //dashboard url
       }, 1000);
 
       // ✅ clear form ONLY on success
