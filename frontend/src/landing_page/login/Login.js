@@ -22,7 +22,7 @@ function Login() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/api/auth/login",
+        "https://zerodha-7jne.onrender.com/api/auth/login",
         inputValue,
         { withCredentials: true }
       );
@@ -32,7 +32,7 @@ function Login() {
 
         // ✅ redirect to DASHBOARD app
         setTimeout(() => {
-          window.location.href = "http://localhost:3001";
+          window.location.href = "https://zerodha-7jne.onrender.com/";
         }, 1000);
 
         // clear form

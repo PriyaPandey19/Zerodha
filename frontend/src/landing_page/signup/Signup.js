@@ -23,7 +23,7 @@ function Signup() {
 
   try {
     const { data } = await axios.post(
-      "http://localhost:3002/api/auth/signup",
+      "https://zerodha-7jne.onrender.com/api/auth/signup",
       inputValue,
       { withCredentials: true }
     );
@@ -33,7 +33,7 @@ function Signup() {
 
       // ✅ redirect to dashboard app
       setTimeout(() => {
-        window.location.href = "http://localhost:3001";
+        window.location.href = "http://localhost:3001";  //dashboard url
       }, 1000);
 
       // ✅ clear form ONLY on success
