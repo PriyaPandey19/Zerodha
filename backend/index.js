@@ -54,6 +54,10 @@ app.post("/newOrder", async (req, res) => {
   res.send("Order saved!");
 });
 
+app.get("/", (req, res) => {
+  res.send("Zerodha Backend is Running 🚀");
+});
+
 /* ✅ DB + SERVER */
 mongoose
   .connect(uri)
