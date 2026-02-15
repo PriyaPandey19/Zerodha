@@ -61,8 +61,8 @@ module.exports.Login = async (req, res) => {
     /* ✅ CORRECT COOKIE */
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "None",
       maxAge: 24 * 60 * 60 * 1000,
     });
 
