@@ -16,7 +16,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3002/api/auth", {
+      .get("https://zerodha-7jne.onrender.com/api/auth", {
         withCredentials: true,
       })
       .then(() => {
@@ -24,7 +24,7 @@ const Dashboard = () => {
       })
       .catch(() => {
         // ❌ not logged in → redirect to login app
-        window.location.href = "http://localhost:3000/login";
+        window.location.href = "https://zerodha-1-pykc.onrender.com/login";
       });
   }, []);
 
