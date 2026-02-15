@@ -4,7 +4,7 @@ const router = require("express").Router();
 
 router.post("/signup", Signup);
 router.post("/login", Login);
-router.get("/",userVerification, (req, res) => {
+router.get("/verify",userVerification, (req, res) => {
     res.json({
         message: "Access granted",
         user: req.user
