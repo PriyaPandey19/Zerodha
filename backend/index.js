@@ -20,7 +20,7 @@ const app = express();
 /* ✅ CORRECT CORS */
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: ["http://localhost:3000", "http://localhost:3001", "https://zerodha-1-pykc.onrender.com/"],
     credentials: true,
   })
 );
